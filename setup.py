@@ -15,7 +15,7 @@ def read(filename):
 
 setup(
     name="sf_apm_lib",
-    version="0.1.0",
+    version="0.1.1",
     url="https://github.com/snappyflow/py_snappyflow",
     license='MIT',
 
@@ -28,7 +28,7 @@ setup(
 
     packages=find_packages(exclude=('tests',)),
 
-    install_requires=['cryptography==3.4.7', 'pycryptodome==3.10.1', 'cffi==1.14.6'],
+    install_requires=['cryptography==3.4.7', 'pycryptodome==3.10.1', 'cffi==1.14.6', 'PyYAML==5.4.1'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
