@@ -15,7 +15,7 @@ def read(filename):
 
 setup(
     name="sf_apm_lib",
-    version="0.1.1",
+    version="0.1.2",
     url="https://github.com/snappyflow/py_snappyflow",
     license='MIT',
 
