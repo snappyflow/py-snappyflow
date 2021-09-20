@@ -1,6 +1,11 @@
-name: Publish Python 🐍 distributions 📦 to PyPI and TestPyPI
+name: Publish Python 🐍 distributions 📦 to PyPI
 
-on: push
+# on: push
+on:
+  release:
+    types:
+      - created
+  workflow_dispatch:
 
 jobs:
   build-n-publish:
