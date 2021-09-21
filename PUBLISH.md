@@ -4,7 +4,18 @@ Publish sf-apm-lib pip package
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![pypi-package](https://img.shields.io/badge/pypi-green)](https://pypi.org/project/sf-apm-lib/)
 
 
-Steps
+
+Build Info
+---------
+
+- Before publishing update package version in [setup.py](#) file located in root folder of application.
+
+- There are two ways to build package: Automatic and Manual.
+
+- Automatic build will be trigger when new github release is created.
+
+
+Manual Steps
 --------------
 
 
