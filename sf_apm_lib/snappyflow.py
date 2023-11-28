@@ -10,7 +10,6 @@ from yaml.loader import SafeLoader
 
 class Snappyflow:
     def __init__(self):
-        self.__CP_ENCRYPTED_KEY = "U25hcHB5RmxvdzEyMzQ1Ng=="
         self.project_name = None
         self.app_name = None
         self.profile_data = None
@@ -37,9 +36,10 @@ class Snappyflow:
         self.app_name = app_name
 
     def _get_profile_data(self, profile_key):
-        unpad = lambda s : s[0:-ord(s[-1:])]
 
-        key = base64.b64decode(self.__CP_ENCRYPTED_KEY)
+        unpad = lambda s : s[0:-ord(s[-1:])]
+        CP_ENCRYPTED_KEY = "U25hcHB5RmxvdzEyMzQ1Ng=="
+        key = base64.b64decode(CP_ENCRYPTED_KEY)
         
         enc = base64.b64decode(profile_key)
         iv = enc[:16]
