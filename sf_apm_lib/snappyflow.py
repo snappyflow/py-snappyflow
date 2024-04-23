@@ -132,6 +132,8 @@ def end_transaction(elasticapm, client, request, response):
     """
     path_info = request.httprequest.environ.get("PATH_INFO")
     name = path_info
+    if not hasattr(request, 'params'):
+        request.params = {}
     for key in ["model", "method", "signal"]:
         val = request.params.get(key)
         if val and val not in name:
